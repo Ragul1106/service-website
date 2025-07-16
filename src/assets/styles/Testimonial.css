@@ -1,0 +1,45 @@
+.card-shadow {
+  position: absolute;
+  bottom: -24px;
+  right: -20px;
+  width: 80%;
+  height: 100px;
+  background-color: #4A66A0;
+  border-radius: 1.5rem;
+  z-index: 0;
+}
+
+/* Tablet: 641px - 1024px */
+@media (max-width: 1024px) {
+  .card-shadow {
+    width: 60% !important;
+    left: 280px;
+  }
+  .testimonial-card {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile: up to 640px */
+@media (max-width: 640px) {
+  .card-shadow {
+    width: 66% !important;
+    left: 100px;
+  }
+   .testimonial-card {
+    min-height: 750px;
+    width: 95%;
+  }
+ .user-profile {
+  top: 50px !important;
+  left: 20px !important;
+}
+
+  .star{
+        top:120px !important;
+  }
+  .quote{
+    top: 25px;
+  }
+}
