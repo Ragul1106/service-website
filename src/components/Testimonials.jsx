@@ -52,7 +52,6 @@ const Testimonials = () => {
                 </div>
               </div>
 
-
               <div className="star absolute top-8 mx-10 right-16 z-10">
                 <img src={starGroup} alt="Stars" className="w-38" />
               </div>
@@ -78,8 +77,6 @@ const Testimonials = () => {
           &gt;
         </button>
       </div>
-
-
     </section>
   );
 };

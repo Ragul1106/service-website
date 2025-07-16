@@ -1,4 +1,3 @@
-
 import React, { useContext } from "react";
 import { DropdownContext } from "../context/DropdownContext";
 import person from "../assets/images/hero_person.png";
@@ -75,20 +74,20 @@ const HeroSection = () => {
         </div>
 
         <div className="relative flex justify-center items-center mt-10 md:mt-0">
-          <div className="absolute w-[180px] sm:w-[250px] md:w-[300px] h-[180px] sm:h-[250px] md:h-[300px] rounded-full bg-white border-[4px] border-[#4A66A0] top-[-10px] sm:top-[120px] right-[20px] md:right-[30px] "></div>
+          {/* <div className="absolute w-[180px] sm:w-[250px] md:w-[300px] h-[180px] sm:h-[250px] md:h-[300px] rounded-full bg-white border-[4px] border-[#4A66A0] top-[-10px] sm:top-[120px] right-[20px] md:right-[30px] "></div> */}
 
           <img
             src={blueCircle}
             alt="Blue Circle"
-            className="absolute top-[110px] sm:top-[120px] right-[20px] md:right-[30px] w-[250px] sm:w-[350px] md:w-[520px] z-10"
+            className="absolute top-[110px] sm:top-[120px] right-[80px] md:right-[120px] w-[250px] sm:w-[350px] md:w-[520px] z-10"
           />
 
           <img
             src={person}
             alt="Person"
-            className="person_img relative z-30 w-auto max-w-none object-cover" />
+            className="person_img relative z-30 right-28 w-auto max-w-none object-cover" />
 
-          <div className="absolute top-[100px] sm:top-[100px] lg:top-[150px] left-[20px] sm:-left-[10px] lg:left-[80px] p-2 z-40">
+          <div className="absolute top-[100px] sm:top-[100px] -mx-20 lg:top-[150px] left-[20px] sm:-left-[10px] lg:left-[80px] p-2 z-40">
             <img
               src={likeIcon}
               alt="Like Icon"
@@ -96,7 +95,7 @@ const HeroSection = () => {
             />
           </div>
 
-          <div className="absolute top-[150px] sm:top-[180px] lg:top-[250px] -left-[10px] sm:-left-[60px] lg:left-[25px] p-2 z-40">
+          <div className="absolute top-[150px] sm:top-[180px] -mx-20 lg:top-[250px] -left-[10px] sm:-left-[60px] lg:left-[25px] p-2 z-40">
             <img
               src={likeIcon}
               alt="Like Icon"
