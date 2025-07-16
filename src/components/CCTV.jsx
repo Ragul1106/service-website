@@ -7,7 +7,7 @@ import CCTVEquipment from '../assets/images/Group 608.png';
 import circleIcon from "../assets/images/material-symbols_drag-click-rounded.png";
 import serviceBg from '../assets/images/standard-quality-control-collage-concept.png';
 import wireImage from '../assets/images/Group 537.png';
-import downloadImage from '../assets/images/downloadImage.png';
+import downloadImage from '../assets/images/downloadimage.png';
 import { Zap } from "lucide-react";
 
 
