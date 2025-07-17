@@ -24,7 +24,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section id='testimonial' className="bg-[#f4f4f4] py-16 px-4 text-center">
+    <section id='testimonial' className="bg-[#f4f4f4] py-16 px-4 text-center">
       <h2 className="text-3xl lg:text-4xl font-bold text-black mb-2 flex justify-center items-center gap-2">
         OUR TESTIMONIALS
         <img src={testimonialimg} alt="testimonial icon" className="h-8 w-auto" />
@@ -36,7 +36,7 @@ const Testimonials = () => {
           <div className="relative flex-1" key={idx}>
             <div className="card-shadow absolute bottom-[-24px] right-[-20px] w-[80%] h-[100px] bg-[#4A66A0] rounded-3xl z-0"></div>
 
-            <div className="testimonial-card min-h-[350px] relative bg-white rounded-tl-[8rem] rounded-tr-[8rem] shadow-lg text-left p-6 pt-16 border border-gray-200 z-10">
+            <div className="testimonial-card min-h-[350px] gap-5  relative bg-white rounded-tl-[8rem] rounded-tr-[8rem] shadow-lg text-left p-6 pt-16 border border-gray-200 z-10">
 
               <div className="user-profile absolute top-0 mx-5 left-16 flex items-center gap-3 bg-[#4A66A0] text-white pl-10 pr-4 py-2 rounded-full z-10">
                 <div className="w-15 h-12 -ml-10">

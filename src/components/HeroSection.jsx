@@ -17,7 +17,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative bg-white px-4 py-10 md:py-16 overflow-hidden">
+    <section className="relative bg-white  py-10 md:py-16 overflow-visible">
       <img
         src={waveBg}
         alt="Wave Background"
@@ -74,62 +74,70 @@ const HeroSection = () => {
         </div>
 
         <div className="relative flex justify-center items-center mt-10 md:mt-0">
-          {/* <div className="absolute w-[180px] sm:w-[250px] md:w-[300px] h-[180px] sm:h-[250px] md:h-[300px] rounded-full bg-white border-[4px] border-[#4A66A0] top-[-10px] sm:top-[120px] right-[20px] md:right-[30px] "></div> */}
 
-          <img
-            src={blueCircle}
-            alt="Blue Circle"
-            className="absolute top-[110px] sm:top-[120px] right-[80px] md:right-[120px] w-[250px] sm:w-[350px] md:w-[520px] z-10"
-          />
+  <img
+    src={blueCircle}
+    alt="Blue Circle"
+    className="absolute top-[110px] sm:top-[120px] right-[80px] md:right-[120px] w-[250px] sm:w-[350px] md:w-[520px] z-10"
+  />
 
-          <img
-            src={person}
-            alt="Person"
-            className="person_img relative z-30 right-28 w-auto max-w-none object-cover" />
+  <img
+    src={person}
+    alt="Person"
+    className="person_img relative z-30 right-28 w-auto max-w-none object-cover"
+  />
 
-          <div className="absolute top-[100px] sm:top-[100px] -mx-20 lg:top-[150px] left-[20px] sm:-left-[10px] lg:left-[80px] p-2 z-40">
-            <img
-              src={likeIcon}
-              alt="Like Icon"
-              className="w-8 sm:w-10 h-8 sm:h-10"
-            />
-          </div>
+  {/* First Like Icon (Top Left) */}
+<div className="absolute top-[100px] sm:top-[110px] lg:top-[150px] left-[-40px] sm:left-[-60px] lg:left-[-80px] p-2 z-40">
+  <img
+    src={likeIcon}
+    alt="Like Icon"
+    className="w-8 sm:w-10 h-8 sm:h-10"
+  />
+</div>
 
-          <div className="absolute top-[150px] sm:top-[180px] -mx-20 lg:top-[250px] -left-[10px] sm:-left-[60px] lg:left-[25px] p-2 z-40">
-            <img
-              src={likeIcon}
-              alt="Like Icon"
-              className="w-8 sm:w-10 h-8 sm:h-10"
-            />
-          </div>
+{/* Second Like Icon (Middle Left) */}
+<div className="absolute top-[180px] sm:top-[200px] lg:top-[250px] left-[-50px] sm:left-[-70px] lg:left-[-90px] p-2 z-40">
+  <img
+    src={likeIcon}
+    alt="Like Icon"
+    className="w-8 sm:w-10 h-8 sm:h-10"
+  />
+</div>
 
-          <div className="absolute bottom-[150px] sm:bottom-[180px] lg:bottom-[250px] -left-[10px] sm:-left-[60px] lg:left-[25px] p-2 z-40">
-            <img
-              src={lightningIcon}
-              alt="Lightning Icon"
-              className="w-5 sm:w-12 h-5 sm:h-12"
-            />
-          </div>
 
-          <div className="tooltip-box absolute bg-white rounded-xl shadow-md flex items-center z-40">
-            <img
-              src={lightningIcon}
-              alt="Zap Icon"
-              className="w-6 sm:w-8 md:w-10 lg:w-12"
-            />
+  {/* Lightning Icon (Bottom Left) */}
+  <div className="absolute bottom-[130px] sm:bottom-[150px] lg:bottom-[180px] left-[0px] sm:left-[20px] lg:left-[40px] p-2 z-40">
+    <img
+      src={lightningIcon}
+      alt="Lightning Icon"
+      className="w-5 sm:w-8 h-5 sm:h-8"
+    />
+  </div>
 
-            <span className="tooltip-text text-sm sm:text-base md:text-sm lg:text-lg font-medium text-[#4A66A0]">
-              Unlock a safer tomorrow <br className="hidden sm:block" /> with Zahrix!
-            </span>
+  {/* Tooltip */}
+  <div className="tooltip-box absolute bg-white rounded-xl shadow-md flex items-center z-40 right-[10px] sm:right-[40px] top-[80px] sm:top-[40px] px-3 py-2 gap-2">
+    <img
+      src={lightningIcon}
+      alt="Zap Icon"
+      className="w-6 sm:w-8 md:w-10"
+    />
+    <span className="tooltip-text text-sm sm:text-base font-medium text-[#4A66A0]">
+      Unlock a safer tomorrow <br className="hidden sm:block" /> with Zahrix!
+    </span>
+    <img
+      src={verifiedIcon}
+      alt="Verified Icon"
+      className="w-6 sm:w-8 md:w-10"
+    />
+  </div>
+</div>
 
-            <img
-              src={verifiedIcon}
-              alt="Verified Icon"
-              className="w-6 sm:w-8 md:w-10 lg:w-12"
-            />
 
-          </div>
-        </div>
+
+
+
+
       </div>
     </section>
   );
