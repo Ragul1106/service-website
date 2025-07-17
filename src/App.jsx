@@ -4,7 +4,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 import { DropdownProvider } from './context/DropdownContext';
-import ScrollToHashElement from "./components/ScrollToHashElement";  
+import ScrollToHashElement from "./components/ScrollToHashElement"; 
+import ScrollToTop from "./components/ScrollToTop"; 
 // Pages
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -22,7 +23,7 @@ const App = () => {
     <DropdownProvider>
     <Router>
        <ScrollToHashElement />
-
+       <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

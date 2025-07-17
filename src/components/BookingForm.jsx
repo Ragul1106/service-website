@@ -143,7 +143,7 @@ const BookingForm = () => {
           <div className="md:col-span-2 text-center mt-6">
             <button
               type="submit"
-              className="bg-[#3C5A99] text-white flex items-center justify-center gap-2 mx-auto px-8 py-3 rounded-md text-base font-semibold hover:bg-blue-700 transition"
+              className="bg-[#3C5A99] text-white flex items-center justify-center gap-2 mx-auto px-8 py-3 rounded-md text-base font-semibold transition"
             >
               <img src={arrowRight} alt="arrow" className="w-5 h-5" />
               Submit
@@ -168,7 +168,7 @@ const BookingForm = () => {
             </p>
             <button
               onClick={handleCloseModal}
-              className="bg-[#3C5A99] text-white px-6 py-3 rounded-lg text-base font-semibold hover:bg-blue-800 transition"
+              className="bg-[#3C5A99] text-white px-6 py-3 rounded-lg text-base font-semibold transition"
             >
               Go Back Home
             </button>

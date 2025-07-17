@@ -10,7 +10,7 @@ const ScrollToHashElement = () => {
       if (element) {
         setTimeout(() => {
           element.scrollIntoView({ behavior: 'smooth' });
-        }, 100); // Delay for route rendering
+        }, 100); 
       }
     }
   }, [hash]);

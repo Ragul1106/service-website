@@ -23,17 +23,15 @@ const AboutUs = () => {
 
   return (
     <div className="flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 py-16 bg-gray-50 relative overflow-hidden">
-      
-      {/* Left Image Section */}
+
       <div className="relative w-full lg:w-1/2 flex justify-center items-end mb-10 lg:mb-0 min-h-[400px]">
-        {/* Vertical Text & Count */}
-        <div className="absolute left-6 top-[-3rem] z-20 flex flex-col items-center">
+        <div className="absolute left-0 top-[-4rem] z-20 flex flex-col items-center">
           <p className="text-3xl font-bold text-blue-700 mb-2">25</p>
           <div className="text-center [writing-mode:vertical-rl] rotate-180">
-            <p className="text-sm font-semibold tracking-wide">
+            <p className="text-md font-semibold tracking-wide">
               Years Experiences
             </p>
-            <p className="text-sm text-gray-600">Electro Mechanical</p>
+            <p className="text-md text-gray-600">Electro Mechanical</p>
           </div>
         </div>
 
