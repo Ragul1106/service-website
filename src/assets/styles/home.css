@@ -1,7 +1,7 @@
 .tooltip-box {
   position: absolute;
   top: 150px;
-  right: -135px;
+  right: -100px;
   padding: 0.5rem;
   gap: 0.3rem;
 }
