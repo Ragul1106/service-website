@@ -1,5 +1,5 @@
-import React, { useState, useContext } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useContext, useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown, Menu, X } from 'lucide-react';
 import logo from '../assets/images/logo.png';
 import { DropdownContext } from '../context/DropdownContext';
@@ -7,6 +7,14 @@ import { DropdownContext } from '../context/DropdownContext';
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { isDropdownOpen, setIsDropdownOpen } = useContext(DropdownContext);
+  const location = useLocation();
+
+useEffect(() => {
+  const params = new URLSearchParams(location.search);
+  if (params.get("openServices") === "true") {
+    setIsDropdownOpen(true);
+  }
+}, [location, setIsDropdownOpen]);
 
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
   const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
