@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { toast, Toaster } from "react-hot-toast"; // Toast import
+import { toast, Toaster } from "react-hot-toast"; 
 import logo from "../assets/images/logo.png";
 import linkedinIcon from "../assets/images/linkedin.png";
 import instagramIcon from "../assets/images/instagram.png";
@@ -35,7 +35,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#4A66A0] text-white py-10 px-4 relative">
-      <Toaster position="top-right" reverseOrder={false} /> {/* Toast container */}
+      <Toaster position="top-right" reverseOrder={false} /> 
 
       <div className="max-w-7xl justify-content-between mx-auto grid md:grid-cols-2 gap-32 lg:gap-20">
 
