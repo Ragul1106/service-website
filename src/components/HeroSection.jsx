@@ -26,7 +26,7 @@ const HeroSection = () => {
       />
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12 relative z-10">
-        {/* Left */}
+
         <div className="space-y-6 text-center md:text-left">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-black">
             Transforming Safety and Security With
@@ -74,22 +74,29 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Right */}
         <div className="relative flex justify-center items-center mt-10 md:mt-0">
-          <div className="absolute w-[180px] sm:w-[250px] md:w-[300px] h-[180px] sm:h-[250px] md:h-[300px] rounded-full bg-white border-[4px] border-[#4A66A0] top-[-10px] sm:top-[120px] right-[20px] md:right-[30px] "></div>
+          <div className="absolute w-[180px] sm:w-[250px] md:w-[300px] h-[180px] sm:h-[250px] md:h-[300px] rounded-full bg-white border-[4px] border-[#626263] 
+                  top-[80px] sm:top-[120px] 
+                  left-1/2 md:left-auto md:right-[30px] 
+                  transform -translate-x-1/2 md:translate-x-0 z-10"></div>
 
           <img
             src={blueCircle}
             alt="Blue Circle"
-            className="absolute top-[110px] sm:top-[120px] right-[20px] md:right-[30px] w-[250px] sm:w-[350px] md:w-[520px] z-10"
+            className="absolute w-[250px] sm:w-[350px] md:w-[520px] 
+               top-[80px] sm:top-[120px] 
+               left-1/2 md:left-auto md:right-[30px] 
+               transform -translate-x-1/2 md:translate-x-0 z-20"
           />
 
           <img
             src={person}
             alt="Person"
-            className="person_img relative z-30 w-auto max-w-none object-cover" />
+            className="person_img relative z-30 w-auto max-w-none object-cover 
+             left-1/2 md:left-auto md:right-[30px] 
+             transform -translate-x-[40%] md:translate-x-0"
+          />
 
-          {/* Icons */}
           <div className="absolute top-[100px] sm:top-[100px] lg:top-[150px] left-[20px] sm:-left-[10px] lg:left-[80px] p-2 z-40">
             <img
               src={likeIcon}
@@ -106,7 +113,7 @@ const HeroSection = () => {
             />
           </div>
 
-          <div className="absolute bottom-[150px] sm:bottom-[180px] lg:bottom-[250px] -left-[10px] sm:-left-[60px] lg:left-[25px] p-2 z-40">
+          <div className="absolute bottom-[180px] sm:bottom-[230px] lg:bottom-[300px] -left-[10px] sm:-left-[60px] lg:left-[25px] p-2 z-40">
             <img
               src={lightningIcon}
               alt="Lightning Icon"
@@ -114,7 +121,6 @@ const HeroSection = () => {
             />
           </div>
 
-          {/* Tooltip with Verified Icon */}
           <div className="tooltip-box absolute bg-white rounded-xl shadow-md flex items-center z-40">
             <img
               src={lightningIcon}
