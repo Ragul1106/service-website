@@ -155,7 +155,7 @@ import lightningIcon from "../assets/images/Group 24.png";
 import likeIcon from "../assets/images/icon-park-solid_good-one 9.png";
 import waveBg from "../assets/images/image 1.png";
 import verifiedIcon from "../assets/images/ic_round-gpp-good.png";
-import '../assets/styles/Home.css'
+import '../assets/styles/home.css'
 
 const HeroSection = () => {
   const { setIsDropdownOpen } = useContext(DropdownContext);
