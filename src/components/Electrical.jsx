@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ElectricalBanner from '../components/ElectricalBanner';
 import serviceimg from '../assets/images/Screenshot 2025-06-12 123446.png';
 import Connectimg from '../assets/images/Screenshot 2025-06-12 165006.png';
@@ -7,10 +7,13 @@ import roundPlug from '../assets/images/Group 538 j.png';
 import circleIcon from "../assets/images/material-symbols_drag-click-rounded.png";
 import serviceBg from '../assets/images/standard-quality-control-collage-concept.png';
 import wireImage from '../assets/images/Group 534.png';
-import { Zap, Plug, Leaf, Wrench, MessageCircle } from "lucide-react";
+import { Zap } from "lucide-react";
 
 
 const Electrical = () => {
+     useEffect(() => {
+          document.title = 'Electrical | Services_Website';
+        }, []);
     return (
         <div>
             <ElectricalBanner />

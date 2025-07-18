@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import bgImage from '../assets/images/handshake-image.png';
 import JobApplicationForm from '../components/JobApplicationForm';
 import ticImage from '../assets/images/Group 33.png';
@@ -10,6 +10,10 @@ const Careers = () => {
     setShowModal(false);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+   useEffect(() => {
+        document.title = 'Careers | Services_Website';
+      }, []);
 
   return (
     <>

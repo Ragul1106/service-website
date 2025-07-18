@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import aboutBg from "../assets/images/Screenshot 2025-06-12 151859.png";
 import AboutUs from "../components/AboutUs";
@@ -7,6 +7,9 @@ import AboutUs3 from "../components/AboutUs3";
 import StatsSection from "../components/StatsSection";
 
 const About = () => {
+   useEffect(() => {
+        document.title = 'About Us | Services_Website';
+      }, []);
   return (
     <>
       <div

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import waveBg from "../assets/images/image 1.png";
 import HeroSection from '../components/HeroSection';
 import AboutUs from '../components/AboutUs';
@@ -8,6 +8,9 @@ import Testimonials from '../components/Testimonials';
 import ContactBanner from '../components/ContactBanner';
 
 function Home() {
+  useEffect(() => {
+      document.title = 'Home | Services_Website';
+    }, []);
   return (
     <section className="relative overflow-y">
       <img

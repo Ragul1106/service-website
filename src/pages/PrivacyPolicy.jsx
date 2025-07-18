@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const PrivacyPolicy = () => {
+   useEffect(() => {
+        document.title = 'Privacy Policy | Services_Website';
+      }, []);
   return (
     <div className="min-h-screen px-4 sm:px-8 lg:px-24 py-10 bg-gray-50">
       <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
